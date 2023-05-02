@@ -1,0 +1,2 @@
+ scan decimal input from user
+ scanned number n = n|(1<<6),then now  6th bit is set.
