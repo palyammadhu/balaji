@@ -1,0 +1,5 @@
+first take input from user value is n and take two counter values c,c2 initially put  its zero
+by using for loop shifting each bit by bit position wise on right side and AND operation with 1
+by using if condition each bit is equal to 1 means counting c counter
+or else counting c2 counter
+then finally print that counted values
