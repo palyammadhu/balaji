@@ -1,0 +1,4 @@
+scan n value from user
+before extracting printing each bit position
+print with extracting 6th bit value by 6th bit right shifted by 6times AND operation with 1.
+print with extracting 2nd bit value by 2nd bit right shifted by 2times AND operation with 1.
