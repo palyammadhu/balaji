@@ -21,8 +21,8 @@ int main()
 sll *headptr=0;
 int op;
 while(1){
-printf("\033[31m enter u r choice \033[0m\n");// 033[31m  \033[0m -> this code for colouring this line otherwise not use this code
-printf("\033[32m 1,add_begin 2,print_data 3,add_end 4,delete_begin 5,delete_end 6,pos_add 7,pos_delete 8,reverse link 9,exit\033[0m \n");
+printf(" enter u r choice \n");
+printf(" 1,add_begin 2,print_data 3,add_end 4,delete_begin 5,delete_end 6,pos_add 7,pos_delete 8,reverse link 9,exit\n");
 scanf("%d",&op);
 switch(op){
 
@@ -35,7 +35,7 @@ case 6:pos_add(&headptr);break;
 case 7:pos_del(&headptr);break;
 case 8:rev_link(&headptr);break;
 case 9:exit(0);
-default:printf("\033[34; user selected wrong choice\033[0m \n");
+default:printf("user selected wrong choice\n");
 }
 }
 }
@@ -52,7 +52,7 @@ n_node->next=*ptr;//newly created node next addr is updated
 
 /************************printing all the records***********/
 void print_data(sll *ptr){
-printf("\033[34m ************************************************************\n");// this for colour purpose
+printf("************************************************************\n");// this for colour purpose
 if(ptr==0){
 printf("no records found\n");
 return;
@@ -60,7 +60,7 @@ return;
 while(ptr){
 printf("%d\n",ptr->data);
 ptr=ptr->next;
-printf("*******************************************************************\033[0m\n");
+printf("*******************************************************************\n");
 }
 }
 /*********************insert a node always at last******************/
