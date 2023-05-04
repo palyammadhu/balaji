@@ -78,7 +78,7 @@ while(last->next)
 last=last->next;
 last->next=n_node;
 }}
-/***************delete node********/
+/***************delete node at begin********/
 void delete_begin(sll **ptr){
 if(*ptr==0)
 {
@@ -90,6 +90,7 @@ sll *del=*ptr;
 *ptr=(*ptr)->next;
 free(del);
 }
+/********************delete node at end********/
 void delete_end(sll **ptr){
 if(*ptr==0)
 {
@@ -110,7 +111,7 @@ temp=temp->next;
 prev->next=NULL;
 free(temp);
 }
-
+/***************add position ********/
 void pos_add(sll **ptr){
 sll *new;
 int count=count_node(*ptr);
@@ -148,7 +149,7 @@ temp->next=new;
 return;
 }
 }
-
+/***************counting nodes********/
 int count_node(sll *ptr){
 int c=0;
 while(ptr){
@@ -157,7 +158,7 @@ ptr=ptr->next;
 }
 return c;
 }
-
+/***************delete position********/
 void pos_del(sll **ptr){
 int ps;
 if(*ptr==NULL)
@@ -189,7 +190,7 @@ del=del->next;
 }
 }
 }
-
+/***************reverse link********/
 void rev_link(sll **ptr){
 if(*ptr==0)
 {
@@ -208,29 +209,3 @@ addr[i]->next=addr[i-1];
 addr[0]->next=0;
 *ptr=addr[c-1];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
